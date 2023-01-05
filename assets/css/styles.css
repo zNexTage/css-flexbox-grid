@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
 body {
     background-color: #1D232A;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'icones', sans-serif;
     color: #FFF;
 }
+
 
 .header {
     display: flex;
@@ -15,4 +21,18 @@ body {
         align-items: stretch; -> Ocupa todo os espaço do container;
         align-items: center; -> Ocupa somente o espaço necessário dentro do container;    
     */
+}
+
+.header__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.header__notification i::before{
+    content: "\e906";
+    font-size: 24px;
+}
+
+.header__logo {
+    width: 40px;
 }
