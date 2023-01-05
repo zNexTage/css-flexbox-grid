@@ -60,7 +60,16 @@ body {
     background-color: #15191c;
     width: 75vw;
     height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
 }
+
+.lateral-menu--show {
+    left: 0;
+    transition: .25s;
+}
+
 
 .lateral-menu__logo{
     align-self: center;
