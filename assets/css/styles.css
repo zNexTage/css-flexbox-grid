@@ -1,0 +1,18 @@
+body {
+    background-color: #1D232A;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191C;
+    padding: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    /*
+        align-items: stretch; -> Ocupa todo os espaço do container;
+        align-items: center; -> Ocupa somente o espaço necessário dentro do container;    
+    */
+}
