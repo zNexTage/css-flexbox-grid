@@ -123,3 +123,84 @@ body {
 .lateral-menu__link--paintings::before{
     content: "\e90a";
 }
+
+.principal {
+    padding: 24px 16px;
+}
+
+.title-page {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+
+.card__content {
+    padding: 16px; 
+    display: grid;   
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__featured {
+    grid-column: span 2; /* lets you merge cells. */
+}
+
+.card__title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2; /* lets you merge cells. */
+}
+
+.card__perfil{
+    color: #95999c;
+    font-size: 0.9rem;
+    grid-column: span 2; /* lets you merge cells. */
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    color: #95999c;
+}
+
+.card__info--time{
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.card__info--visualization::before{
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.card__button--play::before{
+    content: "\e90b";
+    font-size: 24px;    
+}
+
+.card__button--featured {
+    width: 100%;
+    grid-column: span 2; /* lets you merge cells. */
+}
+
+.card__button--featured::before {
+    margin-right: 8px;
+
+}
+
