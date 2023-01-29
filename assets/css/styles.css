@@ -229,7 +229,61 @@ body {
 
 .card__button--featured::before {
     margin-right: 8px;
+}
 
+.card--recent{
+    display: none;    
+}
+
+@media screen and (min-width:1440px) {
+    .card--recent{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        row-gap: 24px;
+        width: 256px;
+        padding: 16px;
+        box-sizing: border-box;
+    }     
+    
+    .card--recent .card__title{
+        grid-column: auto;
+    }
+
+    .card__link {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #0480DC;
+        justify-self: flex-end;
+    }
+
+    .card__list {
+        display: grid;
+        row-gap: 16px;
+        grid-column: span 2;
+    }
+
+    .card__item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;        
+    }
+
+    .card__item-thumbnail {
+        width: 32px;
+        grid-row: span 2;
+    }
+
+    .card__item-title {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+    }
+
+    .card__item-perfil{
+        font-size: 0.8rem;
+        color: #95999c;
+    }
 }
 
 .section {
